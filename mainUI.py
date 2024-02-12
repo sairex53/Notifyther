@@ -160,7 +160,7 @@ def add_reminder():
     show_through(current_hour, current_minute, current_day, current_month, current_year)
 
 def clear_edittext():
-    ui.EditText.setText(" ")
+    ui.EditText.setText("")
 
 def remove_reminder():
     # ADD DISABLE REMINDER THREAD
