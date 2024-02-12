@@ -1,0 +1,47 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_edit_reminder(object):
+    def setupUi(self, edit_reminder):
+        edit_reminder.setObjectName("edit_reminder")
+        edit_reminder.setEnabled(True)
+        edit_reminder.resize(412, 167)
+        edit_reminder.setMinimumSize(QtCore.QSize(412, 167))
+        edit_reminder.setMaximumSize(QtCore.QSize(412, 167))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        edit_reminder.setFont(font)
+        edit_reminder.setAcceptDrops(False)
+        edit_reminder.setSizeGripEnabled(False)
+        edit_reminder.setModal(False)
+        self.editText = QtWidgets.QLineEdit(edit_reminder)
+        self.editText.setGeometry(QtCore.QRect(30, 20, 351, 21))
+        self.editText.setInputMask("")
+        self.editText.setText("")
+        self.editText.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        self.editText.setObjectName("editText")
+        self.timeEdit = QtWidgets.QTimeEdit(edit_reminder)
+        self.timeEdit.setGeometry(QtCore.QRect(220, 70, 91, 24))
+        self.timeEdit.setObjectName("timeEdit")
+        self.dateEdit = QtWidgets.QDateEdit(edit_reminder)
+        self.dateEdit.setGeometry(QtCore.QRect(100, 70, 91, 24))
+        self.dateEdit.setObjectName("dateEdit")
+        self.btn_accept = QtWidgets.QPushButton(edit_reminder)
+        self.btn_accept.setGeometry(QtCore.QRect(210, 110, 113, 32))
+        self.btn_accept.setDefault(True)
+        self.btn_accept.setObjectName("btn_accept")
+        self.btn_cancel = QtWidgets.QPushButton(edit_reminder)
+        self.btn_cancel.setGeometry(QtCore.QRect(80, 110, 113, 32))
+        self.btn_cancel.setAutoDefault(False)
+        self.btn_cancel.setDefault(False)
+        self.btn_cancel.setObjectName("btn_cancel")
+
+        self.retranslateUi(edit_reminder)
+        QtCore.QMetaObject.connectSlotsByName(edit_reminder)
+
+    def retranslateUi(self, edit_reminder):
+        _translate = QtCore.QCoreApplication.translate
+        edit_reminder.setWindowTitle(_translate("edit_reminder", "Change reminder"))
+        self.editText.setPlaceholderText(_translate("edit_reminder", "Change text"))
+        self.btn_accept.setText(_translate("edit_reminder", "Accept"))
+        self.btn_cancel.setText(_translate("edit_reminder", "Cancel"))
