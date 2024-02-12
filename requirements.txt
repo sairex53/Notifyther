@@ -5,8 +5,6 @@ Django==5.0.1
 macholib==1.16.3
 modulegraph==0.19.6
 ngrok==1.0.0
-numpy @ file:///private/tmp/numpy-20240108-5436-5adkdz/numpy-1.26.3
-packaging @ file:///private/tmp/python-packaging-20231211-10652-dl495i/packaging-23.2
 py2app==0.28.7
 PyQt5==5.15.10
 PyQt5-Qt5==5.15.12
