@@ -283,8 +283,8 @@ ui.btn_clear.clicked.connect(clear_edittext)
 ui.btn_edit.clicked.connect(edit_item)
 ui.checkBox.clicked.connect(checkbox_accept)
 
-check_FileClearRemindList()
 check_database()
 change_dateTime()
+check_FileClearRemindList()
 
 sys.exit(app.exec_())
