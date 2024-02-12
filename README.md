@@ -1,4 +1,4 @@
-### Build
+### Build for macOS
 
 ```bash
 git clone https://github.com/sairex53/Notifyther.git 
