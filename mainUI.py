@@ -248,7 +248,7 @@ def edit_item():
     load_componentsEdit()
 
     ui2.btn_accept.clicked.connect(edit_reminder)
-    ui2.btn_close.clicked.connect(close_editWindow)
+    ui2.btn_cancel.clicked.connect(close_editWindow)
     OtherWindow.show()
 
     #ui.listWidget.item(index).setText() 
