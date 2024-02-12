@@ -240,12 +240,15 @@ def edit_item():
         remove_reminder()
         t2 = threading.Thread(target=add_reminder_fromEditWindow)
         t2.start()
+        OtherWindow.close()
 
+    def close_editWindow():
         OtherWindow.close()
 
     load_componentsEdit()
 
     ui2.btn_accept.clicked.connect(edit_reminder)
+    ui2.btn_close.clicked.connect(close_editWindow)
     OtherWindow.show()
 
     #ui.listWidget.item(index).setText() 
